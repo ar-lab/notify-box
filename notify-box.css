@@ -1,0 +1,40 @@
+#notify_box {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 10000;
+}
+
+#notify_box .message {
+    width: 400px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.1);
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#notify_box .message-error {
+    background: #E3A5A5;
+    border: 1px solid #C86464;
+    color: #822121;
+}
+
+#notify_box .message-warning {
+    background: #E3C1A5;
+    border: 1px solid #C89164;
+    color: #824D21;
+}
+
+#notify_box .message-success {
+    background: #84B684;
+    border: 1px solid #50A050;
+    color: #1A681A;
+}
+
+#notify_box .message-info {
+    background: #638888;
+    border: 1px solid #3C7878;
+    color: #144E4E;
+}
