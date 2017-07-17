@@ -35,11 +35,11 @@
             type = 'error';
         }
 
-        var messageBlock = '<div class="message message-' + type + '">' + message + '</div>';
+        var messageBlock = $('<div class="message message-' + type + '">' + message + '</div>');
 
         notifyBox.append(messageBlock);
 
-        $(".message").on('click', hideNotification);
+        messageBlock.on('click', hideNotification);
     }
 
     function hideNotification()
