@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notify-Box Sample</title>
+
+    <link rel="stylesheet" href="notify-box.css">
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="notify-box.js"></script>
+
+<script>
+    $(document).trigger('notifyError', 'Error text');
+    $(document).trigger('notifyWarning', 'Warning text');
+    $(document).trigger('notifySuccess', 'Success text');
+    $(document).trigger('notifyInfo', 'Info text');
+</script>
+
+</body>
+</html>
