@@ -40,11 +40,17 @@
         notifyBox.append(messageBlock);
 
         messageBlock.on('click', hideNotification);
+
+        setTimeout(function() {
+            messageBlock.click();
+        }, 5000);
     }
 
     function hideNotification()
     {
-        $(this).remove();
+        $(this).fadeOut('slow', function () {
+            $(this).remove();
+        });
     }
 
 }(jQuery));
